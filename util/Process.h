@@ -14,7 +14,13 @@
 #include <boost/serialization/type_info_implementation.hpp> // This
 #endif
 
+#if BOOST_VERSION == 105800
+#include <boost/serialization/type_info_implementation.hpp> // This
+#include <boost/archive/basic_archive.hpp> // This
+#endif
+
 #include <boost/serialization/shared_ptr.hpp>
+
 
 #include <vector>
 #include <string>

@@ -12,6 +12,11 @@
 #include <boost/serialization/extended_type_info.hpp> //This
 #endif
 
+#if BOOST_VERSION == 105800
+#include <boost/serialization/type_info_implementation.hpp> // This
+#include <boost/archive/basic_archive.hpp> // This
+#endif
+
 #include <boost/serialization/export.hpp>
 #include <boost/serialization/deque.hpp>
 #include <boost/serialization/list.hpp>
